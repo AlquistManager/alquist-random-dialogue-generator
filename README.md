@@ -24,3 +24,6 @@ random word or string instead.
 For the appropriate NLP response when testing the alquist manager on generated dialogue please use following wit.ai server access token:
 
     4GHEIUDP772M6K6GHEEJQYH3D3QTBI5D
+
+## Test
+You can test random net of nodes by ``main_test.py`` in ``test_script`` folder. How to do it is described in https://github.com/AlquistManager/alquist-random-dialogue-generator/blob/master/test_script/README.md
