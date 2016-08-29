@@ -7,6 +7,7 @@ manager on a gialogue of larger number of states.
 Install Python 3.
 
 Run the application running main.py script. The application doesnt require any input parameters. 
+
     py -3 main.py
 
 ## How to use
@@ -21,4 +22,5 @@ For the input nodes, the application expects values 0 or 1 in order to pass. In 
 random word or string instead.
 
 For the appropriate NLP response when testing the alquist manager on generated dialogue please use following wit.ai server access token:
+
     4GHEIUDP772M6K6GHEEJQYH3D3QTBI5D
