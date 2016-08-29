@@ -1,6 +1,7 @@
-import os
-from random import randint, shuffle
+from random import randint
 from yaml_templates import *
+from config import *
+
 
 
 
@@ -249,26 +250,7 @@ def write_flow(filename, first_id, last_id, order):
             flow.write(node_text(i, trans1, flow_tr_1))
 
 
-if not os.path.exists('yaml/'):
-    os.makedirs('yaml/')
-TOTAL_NODES = 100
-COND_EQ_NODES = 5
-COND_EX_NODES = 5
-UI_MATCH_NODES = 10
-UI_PASS_NODES = 10
-CONTEXT_NODES = 5
-RANDOM_NODES = 30
 
-ordered = [i for i in range(100)]
-shuffle(ordered)
-flow = open('yaml/flow.yml', 'w')
-flow.write(flow_start('flow'))
-flow.write(message_text('init', 'INITIAL STATE', {'flow': 'flow_0'}))
-write_flow('yaml/flow_0.yml', 0, int(TOTAL_NODES/5), ordered)
-write_flow('yaml/flow_1.yml', int(TOTAL_NODES/5), int(TOTAL_NODES/5*2), ordered)
-write_flow('yaml/flow_2.yml', int(TOTAL_NODES/5*2), int(TOTAL_NODES/5*3), ordered)
-write_flow('yaml/flow_3.yml', int(TOTAL_NODES/5*3), int(TOTAL_NODES/5*4), ordered)
-write_flow('yaml/flow_4.yml', int(TOTAL_NODES/5*4), int(TOTAL_NODES), ordered)
 
 
 
